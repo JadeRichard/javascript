@@ -15,7 +15,7 @@ console.log(phrase.replace('Bonjour','string'));
 
 console.log(phrase.slice(0,4) + phrase.charAt(4).toUpperCase()+ phrase.slice(5,6) + phrase.charAt(6).toUpperCase() + phrase.slice(7));
 
-console.log(phrase.indexOf('o'));
+console.log(phrase.substring(0,7).lastIndexOf('o'));
 
 let name = "jade"
 
