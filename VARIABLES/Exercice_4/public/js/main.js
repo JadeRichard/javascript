@@ -20,3 +20,4 @@ let firstname = prompt("First Name ");
 let lastname = prompt("Last Name "); 
 
 alert( lastname.toUpperCase() + firstname );
+
