@@ -51,3 +51,6 @@ let classe = []
 classe.push("Adil", "Aleksic", "Amanda", "Baptiste", "Calvin", "Elliot","Gursel", "Kevin","Ilias", "Imane", "Isma","Jade","Louis","Marcyl","Michael","Mohamed","Nicola","Samy")
 
 console.log(classe[Math.floor(Math.random()*18)]);
+
+classe.splice(11,1)
+console.log(classe)
