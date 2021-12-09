@@ -15,7 +15,7 @@ monTab.unshift("orange")
 console.log(monTab);
 
 
-console.log(monTab[0] + monTab[1].toUpperCase() + monTab.slice(2,4));
+console.log(monTab[1] = monTab[1].toUpperCase());
 
 monTab.reverse();
 console.log(monTab);
@@ -54,3 +54,12 @@ console.log(classe[Math.floor(Math.random()*18)]);
 
 classe.splice(11,1)
 console.log(classe)
+
+
+
+/* let tabVide = []
+tabVide.push(0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
+console.log(tabVide) + console.log(tabVide.length)
+tabVide.forEach(element => console.log(tabVide.indexOf(element)))
+tabVide.splice(tabVide.indexOf(5), 1)
+console.log(tabVide); */
