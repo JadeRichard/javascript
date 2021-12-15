@@ -38,7 +38,7 @@ const division = (nb1, nb2) => {
 
 division(42,2); */
 
-/* //4
+/* //5
 
 const division = (nb1, nb2) => {
     let result = nb1 / nb2 
@@ -70,6 +70,105 @@ const expo = (nb1, nb2) => {
 }
 
 expo(3,6); */
+
+
+/* // EXO8
+// Créer une function [capitalize] qui transforme n'importe quelle chaine de caractères avec la première lettre en majuscule et le reste en minuscule;
+
+const capitalize = () =>{
+    let phrase = prompt("phrase")
+    phrase = phrase.charAt(0).toUpperCase() + phrase.substring(1)
+    console.log(phrase)
+
+
+}
+
+capitalize() */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// EXO9
+// Créer une function [calcul] ayant 3 paramètres
+// nbr1 , operator , nbr2
+// Je dois pouvoir mettre un nombre choisir entre + - * ou / et un second nombre et obtenir une réponse (Utilisez un switch)
+
+
+
+/* const calcul = (nbr1, operator, nbr2) => {
+    nbr1 = +prompt("Nombre 1")
+    operator = prompt("Opérateur ( + - / * )")
+    nbr2 = +prompt("Nombre 2")
+
+    switch (operator) {
+        case "+" :
+            console.log(nbr1 + nbr2)
+        break
+
+        case "-" :
+            console.log(nbr1 - nbr2)
+        break
+
+        case "*" :
+            console.log(nbr1 * nbr2)
+        break
+
+        case "/" :
+            console.log(nbr1 / nbr2)
+        break
+    }
+
+
+}
+
+calcul() */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* //8
 let phrase = prompt("Phrase!!")
