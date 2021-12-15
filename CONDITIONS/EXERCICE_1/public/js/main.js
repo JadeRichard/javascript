@@ -76,11 +76,7 @@ let reponse2 = "Faux"
 let reponse3 = "Faux"
 
 if (question1 != reponse1 || question2 != reponse2 || question3 != reponse3){
-    if ( confirm("Mauvaise réponse, recommencer ?") === true){
-        return true;
-    } else {
-        alert("Merci d'avoir essayé")
-    }
+    alert("Mauvaise réponse.")
 } else {
     alert("Bien joué")
 }

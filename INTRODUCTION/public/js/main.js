@@ -2,9 +2,15 @@
 var 
 const*/
 
-let name = "Jade";
-console.log(name);
+for (let i = 0; i < tableau.length; i++){
+    console.log(tableau[0])
+}
 
-let tableau = ["Bonjour", 25, true, "Hello", "Salut", false, 85512, name];
-console.log(tableau[0]);
-console.log(tableau[tableau.length-1]);
+//while
+
+let prenom = prompt("Prénom")
+
+while (prenom != "Jade"){
+    alert("Mauvais prénom")
+    prenom = prompt("Prénom")
+}
