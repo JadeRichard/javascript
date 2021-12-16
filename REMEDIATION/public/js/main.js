@@ -275,7 +275,7 @@ const jeSaisPasCommentFaireSansFonction = () =>{
 
 jeSaisPasCommentFaireSansFonction() */
 
-//4
+/* //4
 
 let classe = ["Un","Deux","Trois","Quatre","Cinq"]
 let otherClasse = [];
@@ -291,4 +291,4 @@ classe.forEach(element => {
 
 console.log(classe)
 
-console.log(otherClasse);
+console.log(otherClasse); */
