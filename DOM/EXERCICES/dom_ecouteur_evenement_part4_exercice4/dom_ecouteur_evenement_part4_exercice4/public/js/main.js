@@ -40,16 +40,14 @@ button.addEventListener("click", replaceText); */
 
 //4 //////////////////////////////////////////////////////////////////////////////////
 
-/* let para_4 = document.getElementsByTagName("p")[3]
-let input = document.getElementsByTagName("input")[2]
-let button_2 = document.getElementsByTagName("button")[1]
+//Exercice4
+let btnRename = document.getElementsByClassName("btn")[1];
+let nicolas = document.querySelector("#exo4");
 
-function replaceText() {
-    para_4.textContent = input.innerText
-}
-
-button_2.addEventListener("click", replaceText); */
-
+btnRename.addEventListener("click",()=>{
+    let recup = document.querySelectorAll("input")[2];
+    nicolas.innerText = recup.value;
+})
 //5 
 
 /* let img = document.getElementsByTagName("img")[0]
@@ -63,11 +61,30 @@ button.addEventListener("click", replaceSrc);  */
 
 //6
 
-/* let img = document.getElementsByTagName("img")[1]
-let img_2 = document.getElementsByTagName("img")[2]
+let tartine1 = document.getElementsByClassName("img-responsive")[1]
+let tartine2 = document.getElementsByClassName('img-responsive')[2]
+let stock = tartine1
 
-function replaceSrc() {
-    img_2.s = img
- }
+tartine1.addEventListener('click', () =>{
+    console.log(stock)
+})
+tartine2.addEventListener('click', () =>{
+    tartine2.src = stock.src
+})
 
- img.addEventListener("click", replaceSrc);  */
+console.log(tartine1,tartine2)
+
+//4.7
+
+let text1 = document.getElementsByClassName('btn')[3].previousElementSibling
+
+
+let text2 = document.getElementsByClassName('btn')[3].nextElementSibling
+
+let inversing = document.getElementsByClassName('btn')[3]
+
+inversing.addEventListener("click", () => {
+    let tempVar = text1.textContent
+    text1.textContent = text2.textContent
+    text2.textContent = tempVar
+})
