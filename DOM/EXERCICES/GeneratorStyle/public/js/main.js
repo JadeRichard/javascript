@@ -49,14 +49,31 @@ btn_blue.addEventListener("click", () =>{
 
 btn_full.addEventListener("click", () =>{
     big_div.style.border = "solid"
+    big_div.style.borderWidth = input_1.value+"px"
+    big_div.style.borderTopWidth = input_2.value+"px"
+    big_div.style.borderRightWidth = input_3.value+"px"
+    big_div.style.borderBottomWidth = input_4.value+"px"
+    big_div.style.borderLeftWidth = input_5.value+"px"
+    
+
 })
 
 btn_dashed.addEventListener("click", () =>{
     big_div.style.border = "dashed"
+    big_div.style.borderWidth = input_1.value+"px"
+    big_div.style.borderTopWidth = input_2.value+"px"
+    big_div.style.borderRightWidth = input_3.value+"px"
+    big_div.style.borderBottomWidth = input_4.value+"px"
+    big_div.style.borderLeftWidth = input_5.value+"px"
 })
 
 btn_dotted.addEventListener("click", () =>{
     big_div.style.border = "dotted"
+    big_div.style.borderWidth = input_1.value+"px"
+    big_div.style.borderTopWidth = input_2.value+"px"
+    big_div.style.borderRightWidth = input_3.value+"px"
+    big_div.style.borderBottomWidth = input_4.value+"px"
+    big_div.style.borderLeftWidth = input_5.value+"px"
 })
 
 // -------------- BORDERS SIZE 
