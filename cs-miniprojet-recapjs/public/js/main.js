@@ -118,3 +118,15 @@ btn_change.addEventListener("click", () =>{
     }
 })
 
+// ---------- EXO 5
+
+let btn_add = document.querySelector(".add")
+let eggs = document.querySelector("#eggs")
+
+btn_add.addEventListener("click", () =>{
+    let img = document.createElement("img")
+    img.setAttribute("src", "./../cs-miniprojet-recapjs/public/img/oeuf.png")
+    img.style.width = "200px"
+    img.style.marginLeft = "50px"
+    eggs.appendChild(img)
+})
