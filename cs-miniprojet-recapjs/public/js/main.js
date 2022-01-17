@@ -76,3 +76,11 @@ btn_5.addEventListener("click", h_s_5)
 btn_6.addEventListener("click", h_s_6)
 
 
+// ---------- EXO 1
+
+let h2 = document.querySelectorAll("h2")[0]
+
+h2.innerText = "Le titre modifié"
+h2.style.color = "#EFBE37"
+h2.className = "bg-danger"
+
