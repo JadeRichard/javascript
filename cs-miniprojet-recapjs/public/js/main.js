@@ -130,3 +130,167 @@ btn_add.addEventListener("click", () =>{
     img.style.marginLeft = "50px"
     eggs.appendChild(img)
 })
+
+// ---------- EXO 6
+
+let in_1 = document.querySelector("#inp_1")
+let in_2 = document.querySelector("#inp_2")
+
+let btn_calc = document.querySelector(".calcul")
+
+let result_1 = document.querySelector(".result")
+
+btn_calc.addEventListener("click", () =>{
+    result_1.innerText = parseInt(in_1.value) + parseInt(in_2.value)
+    in_1.value = ""
+    in_2.value = ""
+})
+
+////////////////////////////////
+
+let b_1 = document.querySelector(".b1")
+let b_2 = document.querySelector(".b2")
+let b_3 = document.querySelector(".b3")
+let b_p = document.querySelector(".bp")
+let b_4 = document.querySelector(".b4")
+let b_5 = document.querySelector(".b5")
+let b_6 = document.querySelector(".b6")
+let b_m = document.querySelector(".bm")
+let b_7 = document.querySelector(".b7")
+let b_8 = document.querySelector(".b8")
+let b_9 = document.querySelector(".b9")
+let b_f = document.querySelector(".bf")
+let b_c = document.querySelector(".bc")
+let b_0 = document.querySelector(".b0")
+let b_e = document.querySelector(".be")
+let b_d = document.querySelector(".bd")
+let plus = false
+let moins = false
+let fois = false
+let divise = false
+let free = true
+
+let v1
+
+let v2
+
+let result_2 = document.querySelector(".result_2")
+
+let input_cal = document.querySelector(".calculatrice>input")
+
+b_1.addEventListener("click", () =>{
+    free = false
+    input_cal.value = input_cal.value + parseInt("1")
+})
+b_2.addEventListener("click", () =>{
+    free = false
+    input_cal.value = input_cal.value + parseInt("2")
+})
+b_3.addEventListener("click", () =>{
+    free = false
+    input_cal.value = input_cal.value + parseInt("3")
+})
+b_p.addEventListener("click", () =>{
+    free = false
+    plus = true;
+    v1 = input_cal.value
+    console.log(v1);
+    input_cal.value = ""
+    
+})
+b_4.addEventListener("click", () =>{
+    free = false
+    input_cal.value = input_cal.value + parseInt("4")
+})
+
+b_5.addEventListener("click", () =>{
+    free = false
+    input_cal.value = input_cal.value + parseInt("5")
+})
+b_6.addEventListener("click", () =>{
+    free = false
+    input_cal.value = input_cal.value + parseInt("6")
+})
+b_m.addEventListener("click", () =>{
+    free = false
+    moins = true;
+    v1 = input_cal.value
+    console.log(v1);
+    input_cal.value = ""
+})
+b_7.addEventListener("click", () =>{
+    free = false
+    input_cal.value = input_cal.value + parseInt("7")
+})
+b_8.addEventListener("click", () =>{
+    free = false
+    input_cal.value = input_cal.value + parseInt("8")
+})
+b_9.addEventListener("click", () =>{
+    free = false
+    input_cal.value =  input_cal.value + parseInt("9")
+})
+b_f.addEventListener("click", () =>{
+    free = false
+    fois = true;
+    v1 = input_cal.value
+    console.log(v1);
+    input_cal.value = ""
+})
+b_c.addEventListener("click", () =>{
+    free = false
+    plus = false
+    moins = false
+    fois = false
+    divise = false
+    v1 = ""
+    result_2.innerText = "..."
+    console.log(v1);
+    input_cal.value = ""
+})
+
+b_0.addEventListener("click", () =>{
+    free = false
+    input_cal.value = input_cal.value + parseInt("0")
+})
+
+b_e.addEventListener("click", () =>{
+   if (free){
+       if(input_cal.value.includes("+")){
+        let new1 = input_cal.value.split("+")
+        result_2.textContent = parseInt(new1[0]) + parseInt(new1[1])
+       } else if(input_cal.value.includes("-")){
+        let new1 = input_cal.value.split("-")
+        result_2.textContent = parseInt(new1[0]) - parseInt(new1[1])
+       } else if(input_cal.value.includes("*")){
+        let new1 = input_cal.value.split("*")
+        result_2.textContent = parseInt(new1[0]) * parseInt(new1[1])
+       } else if(input_cal.value.includes("/")){
+        let new1 = input_cal.value.split("/")
+        result_2.textContent = parseInt(new1[0]) / parseInt(new1[1])
+       }
+    
+            
+   } else {
+   v2 = input_cal.value
+    if (plus){
+        result_2.innerText = parseInt(v1) + parseInt(v2)
+    } else if (moins){
+        result_2.innerText = parseInt(v1) - parseInt(v2)
+    } else if (fois){
+        result_2.innerText = parseInt(v1) * parseInt(v2)
+    } else if (divise){
+        result_2.innerText =parseInt(v1) / parseInt(v2)
+    }
+}
+})
+
+b_d.addEventListener("click", () =>{
+    free = false
+    divise = true;
+    v1 = input_cal.value
+    console.log(v1);
+    input_cal.value = ""
+    
+})
+
