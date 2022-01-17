@@ -84,3 +84,13 @@ h2.innerText = "Le titre modifié"
 h2.style.color = "#EFBE37"
 h2.className = "bg-danger"
 
+// ---------- EXO 3
+
+let inconnu = document.querySelector("span")
+let input_name = document.querySelector(".input_name")
+let btn_name = document.querySelector(".go")
+
+btn_name.addEventListener("click", () =>{
+    inconnu.innerText = input_name.value
+    input_name.value = ""
+})
