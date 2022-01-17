@@ -24,10 +24,23 @@ button{
     color: white !important;
 }
 
+.exercice_1:focus, .exercice_2:focus, .exercice_3:focus, .exercice_4:focus, .exercice_5:focus, .exercice_6:focus{
+    background-color: #0D6EFD;
+    color: white !important;
+}
+
 .exo1, .exo2, .exo3, .exo4, .exo5, .exo6{
     background-color: rgb(222, 235, 240);
     padding: 50px;
     
+}
+
+.p_counter{
+    padding: 0px !important;
+    margin-left: 30px !important;
+    margin-right: 10px !important;
+    margin-bottom: 0px !important;
+    width: fit-content !important;
 }
 
 /* ---------- EXERCICES ---------- */

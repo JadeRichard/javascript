@@ -94,3 +94,27 @@ btn_name.addEventListener("click", () =>{
     inconnu.innerText = input_name.value
     input_name.value = ""
 })
+
+// ---------- EXO 4
+
+let blue_1 = document.querySelector(".blue_1")
+let blue_2 = document.querySelector(".blue_2")
+let red = document.querySelector(".red")
+
+let btn_change = document.querySelector(".change")
+
+let p_counter = document.querySelector(".p_counter")
+
+let i = 0;
+
+btn_change.addEventListener("click", () =>{
+    i++
+    p_counter.innerText = i
+    if ( i%2 != 0){
+        blue_2.appendChild(red)
+        
+        } else if ( i%2 == 0){
+            blue_1.appendChild(red)
+    }
+})
+
