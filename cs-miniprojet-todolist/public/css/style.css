@@ -183,3 +183,50 @@ h1{
 .dblock{
     display: inherit;
 }
+
+
+
+.s_body{
+    background-color: rgb(34, 32, 32);
+}
+.s_content{
+    background-color: rgb(68, 62, 62);
+}
+.s_h1{
+    color: rgb(250, 218, 208);
+}
+
+.s_mode{
+    background-color: rgb(250, 218, 208);
+}
+
+.s_input{
+    background-color: rgb(94, 84, 84);
+    border: 1px solid rgb(46, 40, 40) !important;
+    color: rgb(42, 38, 38)
+}
+
+.s_enter, .s_all, .s_todo, .s_done{
+    background-color: rgb(94, 84, 84);
+    border: 1px solid rgb(46, 40, 40) !important;
+}
+
+.s_all:hover, .s_todo:hover, .s_done:hover{
+    background-color: rgb(119, 100, 100);
+    color: rgb(221, 183, 183);
+    
+}
+
+.s_clear{
+    background-color: rgb(100, 63, 63);
+    border: 1px solid rgb(66, 47, 47);
+    color: rgb(207, 166, 154);
+}
+
+.s_clear:hover{
+    background-color: rgb(139, 79, 79);
+}
+
+.s_task{
+    background-color: rgb(139, 79, 79);
+}

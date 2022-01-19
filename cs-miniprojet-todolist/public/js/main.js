@@ -5,6 +5,7 @@ import { tasks } from "./_variables.js";
 import { mode } from "./_variables.js";
 
 import { create_task } from "./_variables.js";
+import { sombre } from "./_variables.js";
 
 enter.addEventListener("click", create_task)
 
@@ -21,7 +22,7 @@ clear.addEventListener("click", () =>{
 })
 
 mode.addEventListener("click", () =>{
-    console.log("mode sombre");
+    sombre()
 })
 
 

@@ -10,6 +10,13 @@ export let done = document.querySelector("button.done")
 
 
 export let create_task = () =>{
+    let show = (e) =>{
+        e.parentElement.style.display = "flex"
+    }
+
+    let hide = (e) =>{
+        e.parentElement.style.display = "none"
+    }
     let new_task = document.createElement("div")
     new_task.classList.add("class", "ttodo")
     let nt_p = document.createElement("p")
@@ -41,6 +48,11 @@ export let create_task = () =>{
     nt_modify.appendChild(ntm_text)
     
     new_task.setAttribute("class", "new_task")
+    let body_color = document.body
+    if(body_color.className == "s_body"){
+        console.log("coucou");
+        new_task.classList.add("s_task")
+    }
     tasks.appendChild(new_task)
     input_task.value = ""
     
@@ -63,26 +75,26 @@ export let create_task = () =>{
                 checks[i].parentElement.classList.add("tdone")
                 checks[i].parentElement.classList.remove("ttodo")
                 all.addEventListener("click", () =>{
-                    checks[i].parentElement.classList.remove("dnone")
+                    show(checks[i])
                 })
                 todo.addEventListener("click", () =>{
-                    checks[i].parentElement.classList.add("dnone")
+                    hide(checks[i])
                 })
                 done.addEventListener("click", () =>{
-                    checks[i].parentElement.classList.remove("dnone")
+                    show(checks[i])
                 })
 
             } else {
                 checks[i].parentElement.classList.add("ttodo")
                 checks[i].parentElement.classList.remove("tdone")
                 all.addEventListener("click", () =>{
-                    checks[i].parentElement.classList.remove("dnone")
+                    show(checks[i])
                 })
                 todo.addEventListener("click", () =>{
-                    checks[i].parentElement.classList.remove("dnone")
+                    show(checks[i])
                 })
                 done.addEventListener("click", () =>{
-                    checks[i].parentElement.classList.remove("dnone")
+                    show(checks[i])
                 })
             }
         }
@@ -92,7 +104,7 @@ export let create_task = () =>{
 
     for (let i =0; i < filter.length; i++){
         all.addEventListener("click", () =>{
-            filter[i].classList.remove("dnone")
+            show(checks[i])
         })
         done.addEventListener("click", () =>{
             filter[i].classList.add("dnone")
@@ -157,6 +169,24 @@ export let create_task = () =>{
 
     
     
+}
+
+let body1 = document.body
+let content_div = document.querySelector(".content")
+let h1 = document.querySelector("h1")
+console.log(content_div);
+
+export let sombre = () =>{
+    body1.classList.add("s_body")
+    content_div.classList.add("class", "s_content")
+    h1.classList.add("class", "s_h1")
+    mode.classList.add("class", "s_mode")
+    input_task.classList.add("class", "s_input")
+    enter.classList.add("class", "s_enter")
+    all.classList.add("class", "s_all")
+    todo.classList.add("class", "s_todo")
+    done.classList.add("class", "s_done")
+    clear.classList.add("class", "s_clear")
 }
     
 
