@@ -148,6 +148,10 @@ h1{
     background-color: rgb(199, 163, 163);
     color: rgb(255, 246, 246);
 }
+.all:focus, .todo:focus, .done:focus{
+    background-color: rgb(199, 163, 163);
+    color: rgb(255, 246, 246);
+}
 
 .clear{
     padding: 10px 12px 10px 10px;
@@ -170,4 +174,12 @@ h1{
     width: 800px;
     padding : 10px 10px 10px 10px;
     color: rgb(138, 107, 107);
+}
+
+.dnone{
+    display: none;
+}
+
+.dblock{
+    display: inherit;
 }
